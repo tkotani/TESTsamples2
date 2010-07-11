@@ -1,0 +1,10 @@
+c gga 3 xcf 3 da -.2 ehf -2.8566244 ehk -2.8572116       
+c gga 3 xcf 3 da -.15 ehf -2.8605874 ehk -2.861183       
+c gga 3 xcf 3 da -.1 ehf -2.8644997 ehk -2.8652353       
+c gga 3 xcf 3 da -.05 ehf -2.8676714 ehk -2.8687336      
+c gga 3 xcf 3 da 0 asf -2.8688108 ehk -2.869793          
+c gga 3 xcf 3 da .05 ehf -2.8702661 ehk -2.8715042       
+c gga 3 xcf 3 da .15 ehf -2.8703239 ehk -2.8717656       
+c gga 3 xcf 3 da .2 ahf -2.8682541 ehk -2.8692897        
+c gga 3 xcf 3 da .25 ehf -2.8686016 ehk -2.8698057       
+c gga 3 xcf 3 da .35 ehf -2.8614463 ehk -2.8625417       

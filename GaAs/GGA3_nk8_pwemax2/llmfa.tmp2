@@ -1,0 +1,328 @@
+ -----------------------  START LMFA (80000K)  -----------------------
+ ptenv() is called with EXT=tmp2
+ ptenv() not supported, but continue.
+ IO_HELP           opt    i4       1,  1,   *,  1       0
+ VERS_LM           reqd   r8       1,  1,   1, --       7
+  Expected Input style version: 7 ... found in file: 7
+ CMD               opt    chr      1,  0,   *
+ CONST             opt    chr      1,  0,   *
+ HEADER            opt    chr      1,  0,   *
+ IO_VERBOS         opt    i4v      5,  1,   1,  0       35
+ IO_WKP            opt    lg       1,  1,   *,  1       F
+ IO_IACTIV         opt    i4       1,  1,   *,  1       0
+ IO_TIM            opt    i4v      2,  2,   *,  2       0 0
+
+ --- Parameters for crystal structure ---
+ STRUC_FILE        opt    chr      1,  0,   *
+ STRUC_ALAT        reqd   r8       1,  1,   1, --       10.66
+ STRUC_NBAS        reqd   i4       1,  1,   1, --       2
+ STRUC_PLAT        reqd   r8v      9,  9,   9, --       0 0.5 0.5 0.5 0 0.5 0.5 0.5 0
+ STRUC_NSPEC       opt    i4       1,  1,   1, --       2
+ STRUC_DALAT       opt    r8       1,  1,   1,  0       -0.15
+ STRUC_NL          opt    i4       1,  1,   *,  1       3
+ STRUC_SHEAR       opt    r8v      4,  4,   *, --
+ STRUC_ROT         opt    chr      1,  0,   *
+ STRUC_DEFGRD      opt    r8v      9,  9,   *, --
+ STRUC_STRAIN      opt    r8v      6,  6,   *, --
+
+ --- Program Options ---
+ OPTIONS_HF        opt    lg       1,  1,   *,  1       F
+ OPTIONS_Q         opt    chr      1,  0,   *
+
+ --- Parameters for hamiltonian ---
+ HAM_NSPIN         opt    i4       1,  1,   *,  1       1
+ HAM_REL           opt    i4       1,  1,   *,  1       1
+ HAM_XCFUN         opt    i4       1,  1,   1,  0       1
+ HAM_GGA           opt    i4       1,  1,   *,  1       0
+
+ --- Symmetry group operations ---
+ SYMGRP            opt    chr      1,  0,   1           find
+
+ --- Parameters for species data ---
+ SPEC_SCLWSR       opt    r8       1,  1,   *,  1       0
+ SPEC_OMAX1        opt    r8v      3,  1,   *,  3       0 0 0
+ SPEC_OMAX2        opt    r8v      3,  1,   *,  3       0 0 0
+ SPEC_WSRMAX       opt    r8       1,  1,   *,  1       0
+ ... Species 1
+ SPEC_ATOM         reqd   chr      1,  0,   1           Ga
+ SPEC_ATOM_Z       reqd   r8       1,  1,   1, --       31
+ SPEC_ATOM_R       reqd   r8       1,  1,   1, --       2.2207
+ SPEC_ATOM_A       opt    r8       1,  1,   *,  1       0.025
+ SPEC_ATOM_NR      opt    i4       1,  1,   *,  1       395
+ SPEC_ATOM_LMX     opt    i4       1,  1,   *,  1       2
+ SPEC_ATOM_RSMH    opt    r8v      3,  3,   *,  3       0 0 0
+ SPEC_ATOM_EH      opt    r8v      3,  3,   *, --
+ SPEC_ATOM_RSMH2   opt    r8v      3,  3,   *,  3       0 0 0
+ SPEC_ATOM_LMXA    opt    i4       1,  1,   *,  1       2
+ SPEC_ATOM_LMXL    opt    i4       1,  1,   *,  1       2
+ SPEC_ATOM_P       opt    r8v      3,  1,   *, --
+ SPEC_ATOM_Q       opt    r8v      3,  1,   *, --
+ DEFPQ, z=31: P=  4.75  4.59  4.20
+        z=31: Q=  2.00  1.00  0.00
+ SPEC_ATOM_PZ      opt    r8v      3,  3,   *,  3       0 0 0
+ SPEC_ATOM_LFOCA   opt    i4       1,  1,   *,  1       1
+ SPEC_ATOM_KMXA    opt    i4       1,  1,   *,  1       3
+ SPEC_ATOM_RSMA    opt    r8       1,  1,   *,  1       0
+ SPEC_ATOM_RSMG    opt    r8       1,  1,   *,  1       0
+ SPEC_ATOM_RFOCA   opt    r8       1,  1,   *,  1       0
+ SPEC_ATOM_RSMFA   opt    r8       1,  1,   *,  1       0
+ SPEC_ATOM_RCFA    opt    r8v      2,  2,   *,  2       0 0
+ SPEC_ATOM_RS3     opt    r8       1,  1,   *,  1       1
+ SPEC_ATOM_IDXDN   opt    i4v      3,  3,   *,  3       1 1 1
+ SPEC_ATOM_IDMOD   opt    i4v      3,  3,   *,  3       0 0 0
+ SPEC_ATOM_MIX     opt    lg       1,  1,   *,  1       F
+ SPEC_ATOM_CSTRMX  opt    lg       1,  1,   *,  1       F
+ SPEC_ATOM_FRZWF   opt    lg       1,  1,   *,  1       F
+ SPEC_ATOM_IDU     opt    i4v      4,  1,   *,  4       0 0 0 0
+ SPEC_ATOM_UH      opt    r8v      4,  1,   *,  4       0 0 0 0
+ SPEC_ATOM_JH      opt    r8v      4,  1,   *,  4       0 0 0 0
+ SPEC_ATOM_C-HOLE  opt    chr      1,  0,   *
+ SPEC_ATOM_C-HQ    opt    r8v      2,  2,   *,  2       -1 0
+ SPEC_ATOM_EREF    opt    r8       1,  1,   *,  1       0
+ SPEC_ATOM_AMASS   opt    r8       1,  1,   *, --
+ ... Species 2
+ SPEC_ATOM         reqd   chr      1,  0,   1           As
+ SPEC_ATOM_Z       reqd   r8       1,  1,   1, --       33
+ SPEC_ATOM_R       reqd   r8       1,  1,   1, --       2.33027
+ SPEC_ATOM_A       opt    r8       1,  1,   *,  1       0.025
+ SPEC_ATOM_NR      opt    i4       1,  1,   *,  1       405
+ SPEC_ATOM_LMX     opt    i4       1,  1,   *,  1       2
+ SPEC_ATOM_RSMH    opt    r8v      3,  3,   *,  3       0 0 0
+ SPEC_ATOM_EH      opt    r8v      3,  3,   *, --
+ SPEC_ATOM_RSMH2   opt    r8v      3,  3,   *,  3       0 0 0
+ SPEC_ATOM_LMXA    opt    i4       1,  1,   *,  1       2
+ SPEC_ATOM_LMXL    opt    i4       1,  1,   *,  1       2
+ SPEC_ATOM_P       opt    r8v      3,  1,   *, --
+ SPEC_ATOM_Q       opt    r8v      3,  1,   *, --
+ DEFPQ, z=33: P=  4.90  4.78  4.20
+        z=33: Q=  2.00  3.00  0.00
+ SPEC_ATOM_PZ      opt    r8v      3,  3,   *,  3       0 0 0
+ SPEC_ATOM_LFOCA   opt    i4       1,  1,   *,  1       1
+ SPEC_ATOM_KMXA    opt    i4       1,  1,   *,  1       3
+ SPEC_ATOM_RSMA    opt    r8       1,  1,   *,  1       0
+ SPEC_ATOM_RSMG    opt    r8       1,  1,   *,  1       0
+ SPEC_ATOM_RFOCA   opt    r8       1,  1,   *,  1       0
+ SPEC_ATOM_RSMFA   opt    r8       1,  1,   *,  1       0
+ SPEC_ATOM_RCFA    opt    r8v      2,  2,   *,  2       0 0
+ SPEC_ATOM_RS3     opt    r8       1,  1,   *,  1       1
+ SPEC_ATOM_IDXDN   opt    i4v      3,  3,   *,  3       1 1 1
+ SPEC_ATOM_IDMOD   opt    i4v      3,  3,   *,  3       0 0 0
+ SPEC_ATOM_MIX     opt    lg       1,  1,   *,  1       F
+ SPEC_ATOM_CSTRMX  opt    lg       1,  1,   *,  1       F
+ SPEC_ATOM_FRZWF   opt    lg       1,  1,   *,  1       F
+ SPEC_ATOM_IDU     opt    i4v      4,  1,   *,  4       0 0 0 0
+ SPEC_ATOM_UH      opt    r8v      4,  1,   *,  4       0 0 0 0
+ SPEC_ATOM_JH      opt    r8v      4,  1,   *,  4       0 0 0 0
+ SPEC_ATOM_C-HOLE  opt    chr      1,  0,   *
+ SPEC_ATOM_C-HQ    opt    r8v      2,  2,   *,  2       -1 0
+ SPEC_ATOM_EREF    opt    r8       1,  1,   *,  1       0
+ SPEC_ATOM_AMASS   opt    r8       1,  1,   *, --
+
+ --- Parameters for site data ---
+ SITE_FILE         opt    chr      1,  0,   *
+ ... Site 1
+ SITE_ATOM         reqd   chr      1,  0,   1           Ga
+ Ga       xxx            1           1
+ SITE_ATOM_POS     reqd   r8v      3,  1,   3, --       0 0 0
+ SITE_ATOM_DPOS    opt    r8v      3,  1,   *,  3       0 0 0
+ SITE_ATOM_RELAX   opt    i4v      3,  1,   *,  3       1 1 1
+ ... Site 2
+ SITE_ATOM         reqd   chr      1,  0,   1           As
+ As       xxx            2           2
+ SITE_ATOM_POS     reqd   r8v      3,  1,   3, --       0.25 0.25 0.25
+ SITE_ATOM_DPOS    opt    r8v      3,  1,   *,  3       0 0 0
+ SITE_ATOM_RELAX   opt    i4v      3,  1,   *,  3       1 1 1
+
+ --- Parameters for Ewald sums ---
+ EWALD_AS          opt    r8       1,  1,   *,  1       2
+ EWALD_TOL         opt    r8       1,  1,   *,  1       1e-8
+ EWALD_NKDMX       opt    i4       1,  1,   *,  1       800
+ EWALD_RPAD        opt    r8       1,  1,   *,  1       0
+
+ --- Parameters for iterations ---
+ ITER_NRMIX        opt    i4v      2,  1,   *,  2       80 2
+  mxcst switch =           1           0 F F F
+  mxcst switch =           2           0 F F F
+  LMFA  vn 7.00(LMFA 7.0)  verb 35
+ pot:      XC:CA
+ end of rdctrl2 in imfav7
+ lattic:
+
+                Plat                                  Qlat
+   0.000000   0.500000   0.500000       -1.000000   1.000000   1.000000
+   0.500000   0.000000   0.500000        1.000000  -1.000000   1.000000
+   0.500000   0.500000   0.000000        1.000000   1.000000  -1.000000
+  Cell vol= 290.233913
+
+ LATTC:  as= 2.000   tol=1.00E-08   alat=10.51000   awald= 0.302
+         r1=  1.846   nkd=  87      q1=  5.536   nkg= 169
+ goto mksym
+
+ SGROUP: 1 symmetry operations from 0 generators
+ SYMLAT: Bravais system is cubic with 48 symmetry operations.
+ SYMCRY: crystal invariant under 24 symmetry operations for tol=1e-5
+ GROUPG: the following are sufficient to generate the space group:
+         i*r4x r3(1,1,-1)
+         i*r4x r3(1,1,-1)
+ MKSYM:  found 24 space group operations; adding inversion generated 48 ops
+ zzz nclass=           2
+ end of mksym x
+ goto defspc
+ end of defspc
+ goto freeat
+
+conf:SPEC_ATOM= Ga : --- Table for atomic configuration ---
+conf int(P)z = int(P) where P is replaced by PZ if it is semicore
+conf:  isp  l  int(P) int(P)z    Qval    Qcore   CoreConf
+conf:    1  0       4  4        2.000    6.000 => 1,2,3,
+conf:    1  1       4  4        1.000   12.000 => 2,3,
+conf:    1  2       4  4        0.000   10.000 => 3,
+conf:-----------------------------------------------------
+
+ Species Ga:  Z=31  Qc=28  R=2.220696  Q=0
+ mesh:   rmt=2.220696  rmax=49.297385  a=0.025  nr=395  nr(rmax)=519
+  Pl=  4.5     4.5     4.5    
+  Ql=  2.0     1.0     0.0    
+
+  iter     qint         drho          vh0          rho0          vsum     beta
+    1   31.000000   5.271E+03      155.0000    0.1542E+03      -62.2956   0.30
+   51   31.000000   4.477E-05      302.3465    0.3456E+05     -166.2357   0.30
+
+
+ sumev=-1.548744  etot=-3882.268124  eref=0.000000
+
+ Free-atom wavefunctions:
+ valence:      eval       node at      max at       c.t.p.   rho(r>rmt)
+   4s      -0.67398         0.807       1.882       2.876     0.484549
+   4p      -0.20078         0.869       2.519       5.145     0.770178
+   4d       0.01251         1.254      33.268      49.297*    0.999993
+
+ core:        ecore       node at      max at       c.t.p.   rho(r>rmt)
+   1s    -750.27749         0.000       0.032       0.065     0.000000
+   2s     -92.58142         0.065       0.183       0.285     0.000000
+   2p     -80.67737         0.000       0.146       0.309     0.000000
+   3s     -10.83385         0.267       0.565       0.823     0.000060
+   3p      -7.24866         0.240       0.567       0.980     0.000302
+   3d      -1.42658         0.000       0.531       2.017     0.013698
+
+ Optimise free-atom basis for species Ga, rmt=2.220696
+ l  it    Rsm      Eh     stiffR   stiffE      Eval      Exact     Pnu    Ql
+ 0  30   1.861  -0.520     227.8    223.7   -0.67391  -0.67398    4.82   2.00
+ ...rsm exceeded rmtmx.. repeat with rsm= rmtmx = 1.48046
+ 0   4   1.480  -0.314     227.8    919.1   -0.66990  -0.67398    4.82   2.00
+ 1  13   1.867  -0.100     270.6   1708.9   -0.19849  -0.20078    4.69   1.00
+ ...rsm exceeded rmtmx.. repeat with rsm= rmtmx = 1.48046
+ 1   1   1.480  -0.100     270.6    823.3   -0.17226  -0.20078    4.69   1.00
+ eigenvalue sum:  exact  -1.54874    opt basis  -1.51206    error 0.03669
+ tailsm: init
+ tailsm:xxx1
+ tailsm:xxx2
+
+ tailsm: fit tails to 6 smoothed hankels, rmt= 2.22070, rsm= 1.11035
+ E:    -1.00000    -2.00000    -4.00000    -6.00000    -9.00000    -15.0000
+ C:    1.178126    -2.40481    85.90832    -450.685    1349.180    -4684.22
+        r          rho         fit         diff
+    2.220696    0.020003    0.020014   -0.000010
+    2.851463    0.008656    0.008657   -0.000002
+    3.661385    0.002754    0.002754    0.000000
+    4.701344    0.000668    0.000668    0.000000
+    6.036679    0.000125    0.000125    0.000000
+    7.751282    0.000017    0.000017   -0.000000
+    9.952877    0.000002    0.000002   -0.000000
+    q(fit):     1.739289    rms diff:   0.000004
+    fit: r>rmt  1.739289   r<rmt  1.617117   qtot  3.356405
+    rho: r>rmt  1.739289   r<rmt  1.260711   qtot  3.000000
+ tailsm: end
+
+ coretail: q=0.0695, rho(rmt)=0.139.  Fit with Hankel e=-8.1656  coeff=88.029
+      r            rhoc          fit
+    2.220696    0.34291423    0.34291423
+    2.516394    0.16424967    0.16691993
+    2.851463    0.07220208    0.07260549
+    3.231147    0.02866369    0.02780121
+    3.661385    0.01010891    0.00921338
+    4.148908    0.00311267    0.00259228
+    4.701344    0.00082108    0.00060588
+    5.327337    0.00018165    0.00011476
+    6.036679    0.00003291    0.00001713
+    6.840469    0.00000475    0.00000195
+    7.751282    0.00000053    0.00000016
+    8.783369    0.00000004    0.00000001
+ end of freats: spid=Ga      
+
+conf:SPEC_ATOM= As : --- Table for atomic configuration ---
+conf int(P)z = int(P) where P is replaced by PZ if it is semicore
+conf:  isp  l  int(P) int(P)z    Qval    Qcore   CoreConf
+conf:    1  0       4  4        2.000    6.000 => 1,2,3,
+conf:    1  1       4  4        3.000   12.000 => 2,3,
+conf:    1  2       4  4        0.000   10.000 => 3,
+conf:-----------------------------------------------------
+
+ Species As:  Z=33  Qc=28  R=2.330267  Q=0
+ mesh:   rmt=2.330267  rmax=49.206316  a=0.025  nr=405  nr(rmax)=527
+  Pl=  4.5     4.5     4.5    
+  Ql=  2.0     3.0     0.0    
+
+  iter     qint         drho          vh0          rho0          vsum     beta
+    1   33.000000   5.178E+03      165.0000    0.1641E+03      -66.3148   0.30
+   51   33.000000   4.669E-05      330.4621    0.4535E+05     -173.3738   0.30
+
+
+ sumev=-3.338523  etot=-4515.532037  eref=0.000000
+
+ Free-atom wavefunctions:
+ valence:      eval       node at      max at       c.t.p.   rho(r>rmt)
+   4s      -1.08042         0.734       1.606       2.387     0.253058
+   4p      -0.39256         0.778       1.971       3.732     0.510926
+   4d       0.01293         0.977      33.553      49.206*    0.999994
+
+ core:        ecore       node at      max at       c.t.p.   rho(r>rmt)
+   1s    -859.60108         0.000       0.030       0.061     0.000000
+   2s    -109.05611         0.061       0.170       0.266     0.000000
+   2p     -95.71560         0.000       0.136       0.287     0.000000
+   3s     -13.92449         0.248       0.522       0.760     0.000006
+   3p      -9.80200         0.222       0.521       0.892     0.000034
+   3d      -3.00562         0.000       0.475       1.518     0.001723
+
+ Optimise free-atom basis for species As, rmt=2.330267
+ l  it    Rsm      Eh     stiffR   stiffE      Eval      Exact     Pnu    Ql
+ 0  26   1.527  -0.853     261.4    110.7   -1.08038  -1.08042    4.87   2.00
+ 1  19   1.517  -0.216     486.2    675.5   -0.39161  -0.39256    4.81   3.00
+ eigenvalue sum:  exact  -3.33852    opt basis  -3.33560    error 0.00293
+ tailsm: init
+ tailsm:xxx1
+ tailsm:xxx2
+
+ tailsm: fit tails to 6 smoothed hankels, rmt= 2.33027, rsm= 1.16513
+ E:    -1.00000    -2.00000    -4.00000    -6.00000    -9.00000    -15.0000
+ C:    0.067677    7.273323    12.71031    -129.425    589.7893    -3082.94
+        r          rho         fit         diff
+    2.330267    0.029201    0.029211   -0.000010
+    2.992149    0.009928    0.009929   -0.000001
+    3.842023    0.002442    0.002442    0.000000
+    4.933282    0.000424    0.000424    0.000000
+    6.334487    0.000048    0.000048    0.000000
+    8.133669    0.000003    0.000003   -0.000000
+    q(fit):     2.038918    rms diff:   0.000005
+    fit: r>rmt  2.038918   r<rmt  4.059271   qtot  6.098189
+    rho: r>rmt  2.038918   r<rmt  2.961082   qtot  5.000000
+ tailsm: end
+
+ coretail: q=0.0113, rho(rmt)=0.0175.  Fit with Hankel e=-15.165  coeff=229.36
+      r            rhoc          fit
+    2.330267    0.06121300    0.06121300
+    2.640551    0.02059161    0.02071867
+    2.992149    0.00601788    0.00597045
+    3.390562    0.00149612    0.00143376
+    3.842023    0.00030928    0.00028005
+    4.353595    0.00005184    0.00004328
+    4.933282    0.00000685    0.00000513
+    5.590154    0.00000069    0.00000045
+    6.334487    0.00000005    0.00000003
+ end of freats: spid=As      
+
+  Write mtopara.* ...
+
+ Sum of reference energies: 0
+ Exit 0 LMFA 
+ wkinfo:  used       82 K  workspace of    80000 K   in     0 K calls

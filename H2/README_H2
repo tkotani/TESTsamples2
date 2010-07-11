@@ -1,0 +1,14 @@
+From Kino. VWN Gaussian
+result.h2
+result.h2.pbe
+
+H2_pwemax4 fcc super cell a=25.a.u.
+           dual MTO method. pwemax=4
+           To reproduce, Do "tcsh ctrl.h2".
+
+H2_pwemax8 pwemax=8
+
+
+ggg_h2 : comparison. gnuplot script.
+
+

@@ -1,0 +1,15 @@
+  LMFA  vn 7.00(LMFA 7.0)  verb 35
+ pot:      XC:CA
+fa  Pl  3.5 3.5 3.5  Ql  2 2 0
+fa op 0  26  1.943 -0.815  stf   406    86  ev -0.79621 -0.79962  pq  3.70  2.00
+fa op 0   8  1.099 -0.204  stf   406  3551  ev -0.74834 -0.79962  pq  3.70  2.00
+fa op 1  16  1.585 -0.140  stf   607  1264  ev -0.30391 -0.30591  pq  3.59  2.00
+fa op 1   2  1.099 -0.100  stf   607   680  ev -0.20632 -0.30591  pq  3.59  2.00
+fa op sumev   -2.21105   opt basis   -1.90932   err  0.30173
+fa Z  14.0   rm  49.42  qc 10.00  qspl 0.02177  dq 0.00000  Etot    -577.652474
+fa  Pl  2.5 2.5 3.5  Ql  2 4 0
+fa op 0  15  0.838 -1.256  stf  1085   126  ev -1.74576 -1.74608  pq  2.86  2.00
+fa op 1  15  0.739 -0.317  stf  2634   429  ev -0.67378 -0.67620  pq  2.83  4.00
+fa op sumev   -6.19699   opt basis   -6.18666   err  0.01033
+fa Z   8.0   rm  24.46  qc  2.00  qspl 0.00000  dq 0.00000  Etot    -149.057437
+ wkinfo:  used       82 K  workspace of    80000 K   in     0 K calls

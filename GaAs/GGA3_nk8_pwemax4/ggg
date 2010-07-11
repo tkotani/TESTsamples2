@@ -1,0 +1,8 @@
+#!/usr/bin/gnuplot -persist
+set xrange [-.35: .35]
+plot  "dat"   using ($5):($7+8410.0739891) with lp,\
+      "../GGA2_nk8/dat"  using ($5):($7+8410.0739891) with lp, \
+      "../GGA3_nk8_pwemax2/dat"  using ($5):($7+8410.0739891) with lp   
+set term postscript enhanced color
+set output "pl.eps"
+replot

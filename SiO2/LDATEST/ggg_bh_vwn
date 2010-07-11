@@ -1,0 +1,63 @@
+#!/usr/bin/gnuplot -persist                                   
+###########################################                   
+# the followings are used in order to obtain dat2 in each dire
+#prompt>  tcsh ctrl.gas                                       
+#prompt>  grep 'c ' save.gas |sed s/=/' '/g >dat2   (<--- this
+#set xrange [-.35: .35]                                        
+plot  "datlda34"   using ($3+14.02):($7+1755.-0.02) with lp, \
+      "datlda14"   using ($3+14.02):($7+1755.-0.02) with lp,\
+      "datlda35"   using ($3+14.02):($7+1755) with lp,\
+      "datlda_bh_MarkMTO_lm72"  using ($3+13.942):($7+3.21-.35) with lp, \
+      "datlda_bh_MarkMTO_lm7K"  using ($3+13.942):($7+3.21-.35) with lp
+exit
+
+plot  "datgga34"   using ($3+14.02):($7+1762) with lp, \
+      "datgga14"   using ($3+14.02):($7+1762) with lp, \
+      "datgga13"   using ($3+14.02):($7+1762) with lp
+exit
+
+plot  "datlda13"      using ($3):($7+1755.310) with lp, \
+      "datlda14"      using ($3):($7+1755.310) with lp, \
+      "datgga14"      using ($3):($7+1762.82) with lp, \
+      "datgga13"      using ($3):($7+1762.82) with lp
+set term postscript enhanced color                                                                                    
+set output "pl.eps"                                                                                                   
+replot                                                                                                                
+
+plot  "datlda2_new"   using ($3):($7+.957) with lp, \
+      "dat2"      using ($3):($7+3.21) with lp, \
+      "datlda11"      using ($3):($7+1755.162) with lp, \
+      "datlda12"      using ($3):($7+1755.310) with lp, \
+      "datlda13"      using ($3):($7+1755.310) with lp, \
+      "datlda14"      using ($3):($7+1755.310) with lp, \
+      "datgga13"      using ($3):($7+1762.814) with lp
+                                                                                                                      
+exit                                                                                                                  
+
+plot  "dat"       using ($3):($7+3.21) with lp, \
+      "dat2"      using ($3):($7+3.21) with lp, \
+      "datgga"      using ($3):($7+10.66) with lp, \
+      "datgga1_lm72"      using ($7):($11+2.871) with lp, \
+      "datgga1_new"      using ($7):($11+2.871) with lp
+
+plot  "dat"       using ($3):($5+3.21) with lp, \
+      "dat2"      using ($3):($5+3.21) with lp, \
+      "datgga"      using ($3):($5+10.66) with lp, \
+      "datgga1_lm72"      using ($7):($9+2.871) with lp, \
+      "datgga1_new"      using ($7):($9+2.871) with lp
+
+exit
+
+                                                                                                                      
+      "GGA4/dat2"  using ($5):($9+8410.0894086) with lp, \                                                            
+      "GGA5/dat2"  using ($5):($9+8410.0894086) with lp, \      
+
+
+#!/usr/bin/gnuplot -persist
+set xrange [0: 1]
+set yrange [0: 30]
+plot  "EPS0001.nolfc.d.mark"  using ($4):($6) with lines, \
+      "EPS0001.nolfc.d.mark"  using ($4):($6) with points
+set term postscript enhanced color
+set output "pl.eps"
+replot

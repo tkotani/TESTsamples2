@@ -1,0 +1,15 @@
+#!/usr/bin/gnuplot -persist
+#set xrange [0: 1.2]
+plot  "O2_pwemax3/dat"  using (2.282+$5):($9) with lp, \
+      "O2_pwemax6/dat"  using (2.282+$5):($9) with lp, \
+      "O2_pwemax_gmax12/dat"  using (2.282+$5):($9) with lp, \
+      "result.o2"  using ($1/.529177):(2*$4) with lp
+set term postscript enhanced color
+set output "pl.eps"
+replot
+exit
+
+
+O2_pwemax3/dat
+O2_pwemax6/dat
+O2_pwemax_gmax12/dat

@@ -1,0 +1,21 @@
+#!/usr/bin/gnuplot -persist
+###########################################
+# the followings are used in order to obtain dat2 in each directory
+#prompt>  tcsh ctrl.gas
+#prompt>  grep 'c ' save.gas |sed s/=/' '/g >dat2   (<--- this is not for gastest_gga. Look into its save file)
+set xrange [-.35: .35]
+plot  "GGA_nk4_pwemax3/dat"    using ($3):($5+1762.842) with lp,\
+      "LDA_nk4_pwemax3/dat"   using ($3):($5+1755.341) with lp
+set term postscript enhanced color
+set output "pl.eps"
+replot
+
+exit
+
+      "GGA4/dat2"  using ($5):($9+8410.0894086) with lp, \
+      "GGA5/dat2"  using ($5):($9+8410.0894086) with lp, \
+
+
+GGA_MarkMTO_lm72/dat  GGA_nk4_pwemax3/dat  LDA16_bh_pmt_pwemax15/dat  LDA_bh_MarkMTO_lm72/dat  LDA_nk4_pwemax3/dat
+c da 0 ehf -1762.8420944 ehk -1762.842083
+c da 0 ehf -1755.3511227 ehk -1755.3511234

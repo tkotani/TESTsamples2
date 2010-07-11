@@ -1,0 +1,1 @@
+/home/svan2/bin/lmgwsc --start=sig --iter=7 --sym --insul=16 --band:fn=syml --tol=2e-5 --getsigp --multitet --big --save= bas11.tpsa4.tppa4.float.expa sio2

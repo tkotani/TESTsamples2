@@ -1,0 +1,29 @@
+
+### Do lmf --input to see all effective category and token ###
+### It will be not so difficult to edit ctrlge.py for your purpose ###
+VERS    LM=7 FP=7
+             # version check. Fixed.
+IO      SHOW=T VERBOS=35
+             # SHOW=T shows readin data (and default setting at the begining of console output)
+	     # It is useful to check ctrl is read in correctly or not (equivalent with --show option).
+	     #
+	     # lerger VERBOSE gives more detailed console output.
+SYMGRP find  # 'find' evaluate space-group symmetry automatically.
+             # Usually 'find is OK', but lmf may use lower symmetry
+	     # because of numerical problem.
+             # Do lmchk to check how it is evaluated.
+%const kmxa=7  # kmxa=7 is good for pwemax=5 or lower.
+               # larger kmxa is better but time-consuming (maybe not the critical part for large systems).
+
+STRUC   ALAT=14.02 DALAT=-0.2 PLAT= 0.0 0.5 0.5 0.5 0.0 0.5 0.5 0.5 0.0
+  NBAS= 6  NSPEC=2
+SITE    
+  ATOM=Si  POS=   0.000000   0.000000   0.000000
+  ATOM=Si  POS=   0.250000   0.250000   0.250000
+  ATOM=O   POS=   0.125000   0.125000   0.125000
+  ATOM=O   POS=   0.125000  -0.125000  -0.125000
+  ATOM=O   POS=  -0.125000   0.125000  -0.125000
+  ATOM=O   POS=  -0.125000  -0.125000   0.125000
+SPEC
+  ATOM=Si  Z=14  
+  ATOM=O   Z=8   

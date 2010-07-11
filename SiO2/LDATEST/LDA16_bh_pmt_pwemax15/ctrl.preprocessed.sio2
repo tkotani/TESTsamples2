@@ -1,0 +1,80 @@
+ -----------------------  START LMFGWD (520000K)  -----------------------
+#rf  165: ()SiO2 in the file structure
+
+#rf  308: Si parms : Z=14 eref=-577.69658
+
+#rf  308: O parms : Z=8 eref=-149.1822
+---------------- A general cell with 2 to 4 species, + ES ----------------
+SYMGRP  find
+STRUC   NSPEC=3 NL=5 FILE=site
+        DALAT=0
+SITE    FILE=site
+SPEC
+        ATOM=C1 Z=14 R/A=rwc A=.015 EREF=-577.69658
+         P=3.75,3.55,3.25,4.15,5.12 PZ=0,0,0 IDMOD=0,0,1,1,1 LMX=4 LMXA=lmxa
+          RSMH=1.3,1.3,1.3,1.3,0 EH=-.4,-.4,-.4,-.4,-.4 RSMH2=1.3,1.3,1.1 EH2=-1.2,-1.2,-1.2
+        ATOM=A1 Z=8 R/A=rwa A=.015 EREF=-149.1822
+         P=2.83,2.7,3.25,4.15,5.12 PZ=3.5,3.5,0 IDMOD=0,0,1,1,1 LMX=4 LMXA=lmxa
+          RSMH=.96,.64,1.2,1.1,0 EH=-.4,-.4,-.4,-.4,-.4 RSMH2=.73,.67,.85 EH2=-1.2,-1.2,-1.2 RS3=.9
+        ATOM=EA1 Z=0 R/A=rwea*0 A=.015
+          LMX=2 LMXA=lmxae
+          RSMH=2.0,2.0,2.0,2.0 EH=-.4,-.4,-.4,-.4
+        ATOM=EC1 Z=0 R/A=rwec*0 A=.015
+          LMX=2 LMXA=lmxae
+          RSMH=2.0,2.0,2.0,2.0 EH=-.4,-.4,-.4,-.4
+---------------- Default categories ----------------
+SPEC
+        ATOM=C1 Z=14 R=avw*rwc A=.015 EREF=-577.69658
+         P=3.75,3.55,3.25,4.15,5.12 PZ=0,0,0 IDMOD=0,0,1,1,1 LMX=4 LMXA=lmxa
+          RSMH=1.3,1.3,1.3,1.3,0 EH=-.4,-.4,-.4,-.4,-.4 RSMH2=1.3,1.3,1.1 EH2=-1.2,-1.2,-1.2
+        ATOM=A1 Z=8 R=avw*rwa A=.015 EREF=-149.1822
+         P=2.83,2.7,3.25,4.15,5.12 PZ=3.5,3.5,0 IDMOD=0,0,1,1,1 LMX=4 LMXA=lmxa
+          RSMH=.96,.64,1.2,1.1,0 EH=-.4,-.4,-.4,-.4,-.4 RSMH2=.73,.67,.85 EH2=-1.2,-1.2,-1.2 RS3=.9
+        ATOM=EA1 Z=0 R=avw*rwea A=.015
+          LMX=2 LMXA=lmxae
+          RSMH=2.0,2.0,2.0,2.0 EH=-.4,-.4,-.4,-.4
+        ATOM=EC1 Z=0 R=avw*rwec A=.015
+          LMX=2 LMXA=lmxae
+          RSMH=2.0,2.0,2.0,2.0 EH=-.4,-.4,-.4,-.4
+ITER    MIX=A3,b=.7,k=5 BETSW=F CONV=5e-5 CONVC=1e-6 NIT=10
+        ELIND=-.7 UMIX=1
+MIX     MODE=A3,b=.7,k=5 AMIX=T BETA=.5 BETSW=F CONV=5e-5 CONVC=1e-6
+        XIPMX=0 BETXV=.4 NMIX=1 ELIND=-.7 UMIX=1
+BZ      NKABC=nk nk nk2 BZJOB=bzj NKABC2=2 BZJOB2=bzj EF0=0 DELEF=.1 EFMAX=1
+        TETRA=0 METAL=0 SAVDOS=F DOS=-1 2 NPTS=1001 INVIT=f PUTQP=f
+        EMESH=20 10 1.2 0 0.5 0.0 .005
+OPTICS  MODE=0 NPTS=301 WINDOW=0 1 ESCISS=0 LTET=3
+        PART=0
+STR     RMAX=3.5
+CONST   a=0 bzj=0 avw=1
+        rw=.147
+        rwa=.0812
+        rwec=0 rweb=0 rwea=0
+        lf1=4 lf2=lf1 lmxa=lf1 lmxae=lf2
+        rw=.9 rwc=rw rwb=rwc rwa=rw rwec=rw rweb=rwec rwea=rw
+        nk=4 nk2=nk nkgw=4 nkgw2=nkgw
+        da=0 xx=1 y=0 wto=0 kl=0 nit=10
+EWALD   AS=2.0 TOL=1D-10 ALAT0=a NKRMX=400 NKDMX=400
+OPTIONS NSPIN=1 REL=t INVIT=f HF=0 PFLOAT=0
+        ASA[ CCOR=1 ADNF=1 TWOC=0 T GAMMA=0 ] SCR=0
+IO      SHOW=f HELP=f VERBOS=41 20 WKP=F IACTIV=t
+HAM     NMTO=0 KMTO=-.4 .1 .6 1.1 EWALD=T NSPIN=1 REL=t
+        AUTOBAS[PNU=0 LOC=0 MTO=0 LMTO=0 GW=1 xQLOC=.004]
+        AUTOBAS[PNU=1 LOC=2 MTO=4 LMTO=0 GW=0 xQLOC=.004]
+        PWMODE=0 PWEMIN=0 PWEMAX=3 OVEPS=0
+        GMAX=12
+        FORCES=1 ELIND=-1 FTMESH=16 XCFUN=2 GGA=0 TOL=1d-6 QASA=3
+        RDSIG=12 SIGP:3,0,0,0,3,0,.06,0
+        SIGP[MODE=3 NMIN=0 EMIN=0 NMAX=0 EMAX=3 A=0 B=.06 EFIT=0]
+GW      NKABC=nkgw nkgw nkgw2 GCUTB=2.7 GCUTX=2.2 MKSIG=3 ECUTS=2
+GF      MODE=1 GFOPTS=emom
+VERS    LMFP-5.0 LMASA-6 TB-6 LMF-6 FTB-6 LM:7 ASA:7 FP:7
+---------------- START ----------------
+.START   CNTROL=f BEGMOM=f
+START   CNTROL=0 BEGMOM=0 CNVG=1d-5 NIT=10
+
+
+
+ ------------------------ End of input file ----------------------
+ LMFGWD : 73 lines read from input file
+

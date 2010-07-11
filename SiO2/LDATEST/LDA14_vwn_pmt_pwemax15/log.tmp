@@ -1,0 +1,8 @@
+ wkinfo:  used        0 K  workspace of    10000 K   in     0 K calls
+  LMCHK  vn 7.00  verb 35
+ pot:      XC:BH
+fa  Pl  3.5 3.5 3.5 4.5  Ql  2 2 0 0
+fa Z  14.0   rm  47.81  qc 10.00  qspl 0.00014  dq 0.00000  Etot    -577.640888
+fa  Pl  2.5 2.5 3.5 4.5  Ql  2 4 0 0
+fa Z   8.0   rm  24.35  qc  2.00  qspl 0.00000  dq 0.00000  Etot    -149.071489
+ wkinfo:  used      103 K  workspace of    10000 K   in     0 K calls

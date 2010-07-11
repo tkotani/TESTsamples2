@@ -1,0 +1,9 @@
+ -----------------------  START LMFA (80000K)  -----------------------
+ ptenv() is called with EXT=sio2
+ ptenv() not supported, but continue.
+#rf  165: ()SiO2 in the file structure
+#rf  309: Si parms : Z=14 eref=-577.69658
+#rf  309: O parms : Z=8 eref=-149.1822
+ IOSITE : failed to read header from file site
+ Exit -1 IOSITE: file mismatch, file site
+ wkinfo:  used     0 K  workspace of 80000 K   in   0 K calls

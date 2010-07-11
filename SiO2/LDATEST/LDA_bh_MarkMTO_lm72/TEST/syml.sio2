@@ -1,0 +1,7 @@
+41  .5 .5 .5     0  0 0                L to Gamma   (Lambda)
+41   0  0  0     1  0 0                Gamma to X   (Delta)
+21   1  0  0     1 .5 0                X to W       (Z)
+41   1 .5  0     0  0 0                W to Gamma   (no name?)
+#41  0  0  0    .75 .75 0              Gamma to K   (Sigma)
+0    0 0 0  0 0 0
+

@@ -1,0 +1,8 @@
+#!/usr/bin/gnuplot -persist
+#set xrange [0: 1.2]
+plot  "H2_pwemax4/dat"  using (1.4+$5):($7) with lp, \
+      "H2_pwemax8/dat"  using (1.4+$5):($7) with lp, \
+      "result.h2"  using ($1/.529177):(2*$4) with lp
+set term postscript enhanced color
+set output "pl.eps"
+replot

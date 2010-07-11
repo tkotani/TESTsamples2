@@ -1,0 +1,5 @@
+% const dalat=-0.15 
+STRUC   ALAT=10.66 DALAT={dalat} PLAT= 0 .5 .5    .5 0 .5    .5 .5 0
+  NBAS= 2  NSPEC=2
+SITE    ATOM=Ga  POS=0   0   0
+        ATOM=As  POS=.25 .25 .25

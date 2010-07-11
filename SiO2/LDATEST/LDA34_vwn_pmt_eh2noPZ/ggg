@@ -1,0 +1,17 @@
+#!/usr/bin/gnuplot -persist
+###########################################
+# the followings are used in order to obtain dat2 in each directory
+#prompt>  tcsh ctrl.gas
+#prompt>  grep 'c ' save.gas |sed s/=/' '/g >dat2   (<--- this is not for gastest_gga. Look into its save file)
+#set xrange [-.35: .35]
+plot  "dat" using ($3+14.02):($7+1754.953) with lp
+set term postscript enhanced color
+set output "pl.eps"
+replot
+
+exit
+
+      "GGA4/dat2"  using ($5):($9+8410.0894086) with lp, \
+      "GGA5/dat2"  using ($5):($9+8410.0894086) with lp, \
+
+
